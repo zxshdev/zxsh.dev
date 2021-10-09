@@ -1,0 +1,3 @@
+[submodule "samples/ts-template"]
+	path = samples/ts-template
+	url = https://github.com/zxshdev/zx-ts-template
