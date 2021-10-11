@@ -1,47 +1,50 @@
 #!/usr/bin/env zx --quiet
 
-const HTML_TEMPLATE = `<html>
- <head>
-  <link href="https://classic.yarnpkg.com/en/package/destyle.css" rel="stylesheet" />
-  <style>
-    html {
-      height: 100%;
-    }
-    body {
-      max-width: 1200px;
-      margin: 0 auto;
-      background: #fafafa;
-      height: 100%;
-      color: rgba(0, 0, 0, 0.82);
-      word-break: break-word;
-      word-wrap: break-word;
-      font-family:  -apple-system, "Segoe UI", "Helvetica Neue", "Hiragino Kaku Gothic ProN", メイリオ, meiryo, sans-serif;;
-    }
-    th {
-      padding: 5px;
-      border: 1px solid black;
-    }
-    td {
-      padding: 10px;
-      border: 1px solid black;
-    }
-    table {
-      margin: 1.2rem auto;
-      width: auto;
-      border-collapse: collapse;
-      font-size: 0.95em;
-      line-height: 1.5;
-      word-break: normal;
-      display: block;
-      overflow: auto;
-      -webkit-overflow-scrolling: touch;
-    }
-  </style>
- </head>
- <body>
-   <h1>{repoName}</h1>
-   {body}
- </body>
+const HTML_TEMPLATE = `
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8">
+    <link href="https://classic.yarnpkg.com/en/package/destyle.css" rel="stylesheet" />
+    <style>
+      html {
+        height: 100%;
+      }
+      body {
+        max-width: 1200px;
+        margin: 0 auto;
+        background: #fafafa;
+        height: 100%;
+        color: rgba(0, 0, 0, 0.82);
+        word-break: break-word;
+        word-wrap: break-word;
+        font-family:  -apple-system, "Segoe UI", "Helvetica Neue", "Hiragino Kaku Gothic ProN", メイリオ, meiryo, sans-serif;;
+      }
+      th {
+        padding: 5px;
+        border: 1px solid black;
+      }
+      td {
+        padding: 10px;
+        border: 1px solid black;
+      }
+      table {
+        margin: 1.2rem auto;
+        width: auto;
+        border-collapse: collapse;
+        font-size: 0.95em;
+        line-height: 1.5;
+        word-break: normal;
+        display: block;
+        overflow: auto;
+        -webkit-overflow-scrolling: touch;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>{repoName}</h1>
+    {body}
+  </body>
 </html>
 `
 
